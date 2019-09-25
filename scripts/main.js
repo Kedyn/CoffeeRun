@@ -1,7 +1,7 @@
 (function(window) {
   "use strict";
-  var FORM_SELECTOR = '[data-coffee-order="form"]';
-  var CHECKLIST_SELECTOR = '[data-coffee-order="checklist"]';
+  var FORM_SELECTOR = "[data-coffee-order=\"form\"]";
+  var CHECKLIST_SELECTOR = "[data-coffee-order=\"checklist\"]";
   var App = window.App;
   var Truck = App.Truck;
   var DataStore = App.DataStore;
@@ -17,5 +17,6 @@
     myTruck.createOrder(data);
     checkList.addRow(data);
   });
+  //eslint-disable-next-line no-console
   console.log(formHandler);
 })(window);

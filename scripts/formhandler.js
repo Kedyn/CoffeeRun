@@ -16,6 +16,7 @@
   }
 
   FormHandler.prototype.addSubmitHandler = function(fn) {
+    //eslint-disable-next-line no-console
     console.log("Setting submit handler for form");
     this.$formElement.on("submit", function(event) {
       event.preventDefault();
@@ -25,8 +26,10 @@
         .serializeArray()
         .forEach(function(item) {
           data[item.name] = item.value;
+          //eslint-disable-next-line no-console
           console.log(item.name + " is " + item.value);
         });
+      //eslint-disable-next-line no-console
       console.log(data);
       fn(data);
       this.reset();

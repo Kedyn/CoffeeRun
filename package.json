@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "start": "browser-sync start --server --browser \"chrome.exe\"  --files \".html, stylesheets/.css, scripts/*.js\""
+  }
+}
